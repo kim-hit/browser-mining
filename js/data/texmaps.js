@@ -14,6 +14,18 @@ export default {
         rows: 4,
         cols: 4,
     },
+    "rarity": {
+        get() {
+            return new _3.MeshToonMaterial({ 
+                map: res.textures.rarity,
+                side: _3.DoubleSide,
+                transparent: true,
+                flatShading: true,
+            });
+        },
+        rows: 4,
+        cols: 4,
+    },
     "wip": {
         get() {
             return new _3.MeshToonMaterial({ 
